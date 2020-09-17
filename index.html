@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>E commerce</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,200&family=Cinzel&family=Indie+Flower&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-center">
+        <div class="nav-header">
+          <img src="./images/logo.png" alt="logo" class="logo" />
+
+          <button class="nav-toggle">
+            <i class="fas fa-bars italic"></i>
+            <p class="paraf">Menu</p>
+          </button>
+        </div>
+
+        <div class="user-register-section">
+          <a href=""><i class="fas fa-user-circle"></i>Ingeresa</a>
+          <a href=""
+            ><i class="far fa-heart"
+              ><span id="favorite-count" class="favorite-count"></span></i
+            >Favorita</a
+          >
+          <a class="cart-item" href=""
+            ><i class="fas fa-shopping-cart"></i>Bolsa
+            <div class="cart-numbers">0</div>
+          </a>
+          <div class="search-bar">
+            <input
+              type="text"
+              class="search-bar__input"
+              placeholder="Qué buscas ?"
+              aria-label="Search"
+            />
+
+            <button class="search-bar__submit" aria-label="submit search">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <div class="sidebar">
+        <div class="sidebar-btn">
+          <button class="close-btn">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+
+        <ul class="links">
+          <!--  <li>
+            <a class="links-access" href="#" data-access="mujer">Mujer</a>
+          </li>
+          <li>
+            <a class="links-access" href="#" data-access="hombre">Hombre</a>
+          </li>
+          <li>
+            <a class="links-access" href="#" data-access="infantil">Infantil</a>
+          </li>
+          <li>
+            <a class="links-access" href="#" data-access="todo">todo</a>
+          </li>
+          <li>
+            <a class="links-access" href="#" data-access="rebajas">Rebajas</a>
+          </li> -->
+        </ul>
+      </div>
+    </header>
+
+    <section class="products">
+      <div class="products-center">
+        <!--  <article class="product">
+          <div class="img-container">
+            <img src="./images/image1.png" alt="product" class="product-img" />
+            <button class="bag-btn" data-id="1">
+              <i class="fas fa-shopping-cart"></i>
+              añadir bolsa
+            </button>
+          </div>
+          <h3>bota rosada</h3>
+          <h4>$2500</h4>
+        </article> -->
+      </div>
+    </section>
+    <!-- cart -->
+    <div class="cart-overlay">
+      <div class="cart">
+        <span class="close-cart">
+          <i class="fas fa-window-close"></i>
+        </span>
+        <h2>Tu bolsa</h2>
+        <div class="cart-content"></div>
+        <div class="cart-footer">
+          <h3>tu balance: $ <span class="cart-total">0</span></h3>
+          <button class="clear-cart banner-btn">Borrar tu bolsa</button>
+        </div>
+      </div>
+    </div>
+    <!--end of cart-->
+    <footer>
+      <address>
+        <h5>Nuestro Dirección</h5>
+        Otto Goedecke 217, R8400 <br />
+        San Carlos de Bariloche <br />
+        Río Negro <br />
+        <i class="fab fa-whatsapp-square"><span>+852 1234 5678</span></i>
+      </address>
+      <div id="map"></div>
+      <div class="social-icons">
+        <div>
+          <a href="https://www.facebook.com"
+            ><i class="fab fa-facebook-square"></i
+          ></a>
+          <a href="https://www.twitter.com"
+            ><i class="fab fa-twitter-square"></i
+          ></a>
+          <a href="https://www.instagram.com"
+            ><i class="fab fa-instagram-square"></i
+          ></a>
+        </div>
+        <div>
+          <form action="https://formspree.io/mqkyrkpo" method="POST">
+            <label for="name">Tu Nombre</label
+            ><input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Tu Nombre"
+              required
+            />
+            <label for="email">Tu correa</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Tu correa"
+              required
+            />
+            <label for="subject">Commentario</label>
+            <textarea
+              name="subject"
+              id="subject"
+              cols="40"
+              rows="10"
+              placeholder="Contactanos"
+            ></textarea>
+            <button type="submit" class="send-button">Mandar</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <p class="parag">© 2020 Todos los derechos reservados.</p>
+
+    <script
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7qiEAHsfOYzi32BCTNabS30q7morGyn8&callback=initMap"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
